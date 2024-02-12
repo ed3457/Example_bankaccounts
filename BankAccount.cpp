@@ -37,3 +37,10 @@ BankAccount::BankAccount(string cn, float startingBalance)
     setClientName(cn);
     balance = startingBalance;
 }
+
+void BankAccount::printInfo()
+{
+    cout << "Client Name:" << getClientName()<<endl;
+
+    cout << "Balance:" << getBalance()<<endl;
+}

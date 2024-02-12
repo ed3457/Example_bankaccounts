@@ -14,14 +14,14 @@ public:
 
 	float getBalance();
 
-	void withdraw(float amount);
+	virtual void withdraw(float amount);
 
-	void deposit(float amount);
+	virtual void deposit(float amount);
 
 	BankAccount();
 	BankAccount(string cn, float startingBalance);
 
-
+	virtual void printInfo(); 
 
 
 };
