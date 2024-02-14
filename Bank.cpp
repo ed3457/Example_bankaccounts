@@ -75,4 +75,10 @@ Bank::Bank(string bn)
 
 Bank::~Bank()
 {
+    // delete[] accounts;
+
+    for (int i = 0; i < count; i++)
+        delete accounts[i];
+
+    delete[]accounts;
 }
