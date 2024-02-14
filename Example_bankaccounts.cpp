@@ -2,9 +2,18 @@
 //
 
 #include <iostream>
-
+#include "Bank.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+	Bank bank1("Royal Oak, MI");
+
+	bank1.addNewAccount();
+
+	bank1.addNewAccount();
+
+
+
+
+	bank1.printAccounts();
 }
 
