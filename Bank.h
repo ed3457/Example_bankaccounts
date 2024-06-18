@@ -5,12 +5,14 @@ class Bank
 {
 private:
 	string branchName;
-	BankAccount **accounts;
+	BankAccount **accounts;// array of pointers 
 	int count = 0;
 
 public:
 	void printAccounts();
 	void addNewAccount();
+
+	void withdrawFromAll(float b);
 
 	void setBranchName(string bn);
 

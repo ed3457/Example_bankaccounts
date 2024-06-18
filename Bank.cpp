@@ -6,7 +6,7 @@ void Bank::printAccounts()
         accounts[i]->printInfo();
 
 }
-
+// Factory method 
 void Bank::addNewAccount()
 {
     cout << "Enter the type of account you want to create:(b=Checking,s=savings)\n";
@@ -54,6 +54,12 @@ void Bank::addNewAccount()
 
 
 
+}
+
+void Bank::withdrawFromAll(float b)
+{
+    for (int i = 0; i < count; i++)
+        accounts[i]->withdraw(b);
 }
 
 void Bank::setBranchName(string bn)

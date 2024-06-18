@@ -7,9 +7,9 @@ private:
     float interestRate;
 
 public:
-    void printInfo();
-    void deposit(float amount);
-    void withdraw(float amount);
+    void printInfo();// override 
+    void deposit(float amount); // override
+    void withdraw(float amount);// override
 
     float getInterestRate();
     void setInterestRate(float ir);

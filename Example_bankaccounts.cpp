@@ -11,9 +11,12 @@ int main()
 
 	bank1.addNewAccount();
 
-
+	bank1.withdrawFromAll(50);
 
 
 	bank1.printAccounts();
+
+
+
 }
 
