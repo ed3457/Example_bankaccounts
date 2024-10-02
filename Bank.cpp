@@ -79,7 +79,7 @@ Bank::Bank(string bn)
     accounts = new BankAccount * [1000];
 }
 
-Bank::~Bank()
+Bank::~Bank()// destructor 
 {
     // delete[] accounts;
 
@@ -87,4 +87,9 @@ Bank::~Bank()
         delete accounts[i];
 
     delete[]accounts;
+}
+
+BankAccount* Bank::operator[](int index)
+{
+    return accounts[index];
 }

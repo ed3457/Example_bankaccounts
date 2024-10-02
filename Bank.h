@@ -18,9 +18,11 @@ public:
 
 	string getBranchName();
 
-	Bank(string bn);
+	Bank(string bn); // 
 
 	~Bank(); // destructor 
+
+	BankAccount * operator[](int index);
 
 };
 

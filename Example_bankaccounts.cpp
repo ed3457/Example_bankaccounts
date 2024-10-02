@@ -16,6 +16,10 @@ int main()
 
 	bank1.printAccounts();
 
+	//bank1.getBankAccount(0);
+
+	bank1[0]->printInfo();
+
 
 
 }
